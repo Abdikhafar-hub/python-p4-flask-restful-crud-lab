@@ -63,7 +63,7 @@ class PlantByID(Resource):
         db.session.delete(plant)
         db.session.commit()
 
-        return '', 203
+        return '', 204
 
 
 api.add_resource(PlantByID, '/plants/<int:id>')
